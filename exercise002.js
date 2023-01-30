@@ -9,4 +9,19 @@ const fetchData = (apiEndPoint) => {
     .catch((error) => console.log(error));
 };
 
-fetchData(jsonTypicode);
+//fetchData(jsonTypicode);
+
+fetchDetails(jsonTypicode);
+async function fetchDetails(input) {
+  try {
+  const responsedet = await fetch(input);  
+  if (responsedet.ok) {
+  const responsedata = await responsedet.json();
+  console.log(responsedata);
+  }
+}
+  catch (err) {
+    console.log(err);
+  }
+}
+
