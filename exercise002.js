@@ -9,7 +9,7 @@ const fetchData = (apiEndPoint) => {
     .catch((error) => console.log(error));
 };
 
-//fetchData(jsonTypicode);
+fetchData(jsonTypicode);
 
 fetchDetails(jsonTypicode);
 async function fetchDetails(input) {
@@ -25,3 +25,4 @@ async function fetchDetails(input) {
   }
 }
 
+fetchDetails('http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=df193315a4981dd6efc272f5e432ca6b');
