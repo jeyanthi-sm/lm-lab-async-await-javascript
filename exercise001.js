@@ -20,3 +20,12 @@ async function getPromiseResponse() {
 	catch (err) { console.log(`Boo. Promise rejected with response ${err}` ); }	
 }
 getPromiseResponse();
+
+try {
+const promiseResult = await promise;
+console.log(`Yay! Promise resolved with response: ${promiseResult}` );
+console.log(promiseResult);
+}
+catch (err) {
+	console.log(`Boo. Promise rejected with response ${err}` ); 
+}
